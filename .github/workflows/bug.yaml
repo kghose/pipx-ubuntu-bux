@@ -33,4 +33,7 @@ jobs:
     - name: Test
       run: |
         echo $PATH
+        pipx --version
+        echo $PIPX_HOME
+        echo $PIPX_BIN_DIR
         cowsay
