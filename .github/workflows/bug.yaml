@@ -27,6 +27,8 @@ jobs:
         pipx install cowsay
         pipx ensurepath
         pipx --version
+        echo $PIPX_HOME
+        echo $PIPX_BIN_DIR
     # Need a new shell so that ensurepath takes
     - name: Test
       run: |
