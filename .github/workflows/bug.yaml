@@ -23,6 +23,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: Install test dependencies
       run: |
+        env
         echo $PIPX_HOME
         echo $PIPX_BIN_DIR        
         pip install pipx
