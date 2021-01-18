@@ -23,6 +23,8 @@ jobs:
         python -m pip install --upgrade pip
     - name: Install test dependencies
       run: |
+        echo $PIPX_HOME
+        echo $PIPX_BIN_DIR        
         pip install pipx
         pipx install cowsay
         pipx ensurepath
